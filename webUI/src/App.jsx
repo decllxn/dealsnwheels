@@ -10,6 +10,9 @@ const Dashboard = lazy(() => import("./pages/SellersDashBoard"));
 const Blog = lazy(() => import("./pages/BlogHome"));
 const ArticlePage = lazy(() => import("./pages/ArticlePage"));
 const SellACar = lazy(() => import("./pages/SellACar"));
+const Auction = lazy(() => import("./pages/AuctionsPage"));
+const CarsForSale = lazy(() => import("./pages/CarsForSalePage"));
+const Spares = lazy(() => import("./pages/SparePartsPage"));
 
 const App = () => {
   return (
@@ -23,6 +26,9 @@ const App = () => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<ArticlePage />} />
           <Route path="/sell-a-car" element={<SellACar />} />
+          <Route path="/auctions" element={<Auction />} />
+          <Route path="/cars-for-sale" element={<CarsForSale />} />
+          <Route path="/spare-parts" element={<Spares />} />
         </Routes>
       </Suspense>
     </Router>

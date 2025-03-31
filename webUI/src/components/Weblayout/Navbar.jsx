@@ -113,7 +113,7 @@ const Navbar = () => {
 
               {/* Sell a Car Button */}
               <Link 
-                to="/sell" 
+                to="/sell-a-car" 
                 className="px-4 py-2 bg-[#D72638] hover:bg-[#B71C29] text-white rounded-lg text-sm font-semibold flex items-center space-x-2 transition-all duration-300 shadow-lg"
               >
                 <FaCar size={18} /> <span>Sell a Car</span>
