@@ -1,0 +1,93 @@
+.about-page {
+    background-color: white;
+  }
+  
+  .about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .about-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .about-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .about-description {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* Flex Cards */
+  .about-cards-wrapper {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-cards-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
+  
+  .about-card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+  }
+  
+  .about-card > .about-card-row {
+    color: white;
+    display: flex;
+  }
+  
+  .about-card > .about-card-row > .about-card-icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+  }
+  
+  .about-card > .about-card-row > .about-card-description {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 300px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all .3s ease;
+  }
+  
+  input {
+    display: none;
+  }
+  
+  input:checked + label {
+    width: 400px;
+  }
+  
+  input:checked + label .about-card-description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }  
