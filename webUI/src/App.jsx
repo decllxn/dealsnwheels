@@ -13,6 +13,7 @@ const SellACar = lazy(() => import("./pages/SellACar"));
 const Auction = lazy(() => import("./pages/AuctionsPage"));
 const CarsForSale = lazy(() => import("./pages/CarsForSalePage"));
 const Spares = lazy(() => import("./pages/SparePartsPage"));
+const Contact = lazy(() => import("./pages/ContactPage"));
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/auctions" element={<Auction />} />
           <Route path="/cars-for-sale" element={<CarsForSale />} />
           <Route path="/spare-parts" element={<Spares />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Suspense>
     </Router>

@@ -115,6 +115,18 @@ export const MoreDropdown = () => {
             transition={{ duration: 0.2 }}
           >
             <Link
+              to="/about-us"
+              className="block px-4 py-2 text-white hover:bg-[#292929] rounded-md"
+              onClick={() => setIsOpen(false)}
+            >
+              About Us
+            </Link>
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.2 }}
+          >
+            <Link
               to="/contact"
               className="block px-4 py-2 text-white hover:bg-[#292929] rounded-md"
               onClick={() => setIsOpen(false)}

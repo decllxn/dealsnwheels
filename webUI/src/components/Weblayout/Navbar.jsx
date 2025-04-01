@@ -104,13 +104,104 @@ const Navbar = () => {
           >
             <div className="flex flex-col items-center py-6 space-y-4">
 
-              <Link to="/auctions" className="text-sm text-white relative group transition duration-300 flex items-center space-x-2" onClick={() => setIsOpen(false)}>Auctions</Link>
-              <Link to="/cars-for-sale" className="text-sm text-white relative group transition duration-300 flex items-center space-x-2" onClick={() => setIsOpen(false)}>Cars For Sale</Link>
-              <Link to="/spare-parts" className="text-sm text-white relative group transition duration-300 flex items-center space-x-2" onClick={() => setIsOpen(false)}>Spare Parts</Link>
-              <Link to="/communities" className="text-sm text-white relative group transition duration-300 flex items-center space-x-2" onClick={() => setIsOpen(false)}>Communities</Link>
-              <Link to="/blog" className="text-sm text-white relative group transition duration-300 flex items-center space-x-2" onClick={() => setIsOpen(false)}>Blog</Link>
-              <Link to="/contact" className="text-sm text-white relative group transition duration-300 flex items-center space-x-2" onClick={() => setIsOpen(false)}>Contact</Link>
+            <motion.div
+        whileHover={{ scale: 1.1 }}
+        transition={{ duration: 0.3 }}
+      >
+        <Link
+          to="/auctions"
+          className="text-sm text-white relative group transition duration-300 flex items-center space-x-2"
+          onClick={() => setIsOpen(false)}
+        >
+          Auctions
+          <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-[#D72638] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+        </Link>
+      </motion.div>
 
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+        transition={{ duration: 0.3 }}
+      >
+        <Link
+          to="/cars-for-sale"
+          className="text-sm text-white relative group transition duration-300 flex items-center space-x-2"
+          onClick={() => setIsOpen(false)}
+        >
+          Cars For Sale
+          <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-[#D72638] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+        </Link>
+      </motion.div>
+
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+        transition={{ duration: 0.3 }}
+      >
+        <Link
+          to="/spare-parts"
+          className="text-sm text-white relative group transition duration-300 flex items-center space-x-2"
+          onClick={() => setIsOpen(false)}
+        >
+          Spare Parts
+          <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-[#D72638] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+        </Link>
+      </motion.div>
+
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+        transition={{ duration: 0.3 }}
+      >
+        <Link
+          to="/communities"
+          className="text-sm text-white relative group transition duration-300 flex items-center space-x-2"
+          onClick={() => setIsOpen(false)}
+        >
+          Communities
+          <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-[#D72638] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+        </Link>
+      </motion.div>
+
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+        transition={{ duration: 0.3 }}
+      >
+        <Link
+          to="/blog"
+          className="text-sm text-white relative group transition duration-300 flex items-center space-x-2"
+          onClick={() => setIsOpen(false)}
+        >
+          Blog
+          <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-[#D72638] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+        </Link>
+      </motion.div>
+
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+        transition={{ duration: 0.3 }}
+      >
+        <Link
+          to="/About-us"
+          className="text-sm text-white relative group transition duration-300 flex items-center space-x-2"
+          onClick={() => setIsOpen(false)}
+        >
+          About Us
+          <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-[#D72638] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+        </Link>
+      </motion.div>
+
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+        transition={{ duration: 0.3 }}
+      >
+        <Link
+          to="/contact"
+          className="text-sm text-white relative group transition duration-300 flex items-center space-x-2"
+          onClick={() => setIsOpen(false)}
+        >
+          Contact
+          <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-[#D72638] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+        </Link>
+      </motion.div>
+              
               {/* Sell a Car Button */}
               <Link 
                 to="/sell-a-car" 
